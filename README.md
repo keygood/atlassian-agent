@@ -75,6 +75,7 @@
 * 访问网站：[https://zhile.io](https://zhile.io) 给我留言。
 
 ### 热心网友教程（感谢原作者，侵删！）
+* [热心大佬的一键安装配置脚本](https://github.com/alues/atlassian_install_script)
 * [confluence 安装及破解](https://www.qinjj.tech/2019/01/04/confluence%20install/)
 * [【黑科技】Atlassian产品线全破解](https://tech.cuixiangbin.com/?p=1248)
 * [通过Docker安装JIRA和Confluence（破解版）](https://www.jianshu.com/p/b95ceabd3e9d)

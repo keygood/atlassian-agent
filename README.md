@@ -55,8 +55,8 @@
 ### 使用KeyGen
 * 你得确认已经配置好agent，参考上面说明。
 * 当你试着执行`java -jar /path/to/atlassian-agent.jar`时应该可以看到输出的KeyGen参数帮助。
-* 请仔细看看每个参数的作用，特别是`-p`参数的取值范围。
-* 第三方插件将其`应用密钥/插件关键字`作为`-p`参数。如：`-p com.gliffy.integration.confluence`
+* 请仔细看看每个参数的作用，特别是`-p`参数的取值范围。`-p`参数内容最好用引号包住，否则可能影响参数解析。
+* 第三方插件将其`应用密钥/插件关键字`作为`-p`参数。如：`-p 'com.gliffy.integration.confluence'`
 * 在Atlassian服务安装时你应该能看到类似：`AAAA-BBBB-CCCC-DDDD`的server id，请留意。
 * 提供了正确的参数运行KeyGen会在终端输出计算好的激活码。
 * 将生成的激活码复制出来去激活你要使用的服务。

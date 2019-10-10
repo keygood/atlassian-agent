@@ -5,6 +5,7 @@ import io.zhile.crack.atlassian.license.LicenseProperty;
 import io.zhile.crack.atlassian.license.products.*;
 import org.apache.commons.cli.*;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -120,22 +121,22 @@ public class Usage {
                 property = new TeamCalendars(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "bamboo":
-                property = new Bamboo(contactName, contactEMail, serverID, organisation);
+                property = new Bamboo(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "bitbucket":
                 property = new Bitbucket(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "fisheye":
-                property = new FishEye(contactName, contactEMail, serverID, organisation);
+                property = new FishEye(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "crucible":
-                property = new Crucible(contactName, contactEMail, serverID, organisation);
+                property = new Crucible(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "crowd":
                 property = new Crowd(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "jc":
-                property = new JIRACore(contactName, contactEMail, serverID, organisation);
+                property = new JIRACore(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "portfolio":
                 property = new Portfolio(contactName, contactEMail, serverID, organisation, dataCenter);
@@ -144,13 +145,13 @@ public class Usage {
                 property = new JIRAServiceDesk(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "training":
-                property = new Training(contactName, contactEMail, serverID, organisation);
+                property = new Training(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             case "capture":
-                property = new Capture(contactName, contactEMail, serverID, organisation);
+                property = new Capture(contactName, contactEMail, serverID, organisation, dataCenter);
                 break;
             default:
-                property = new ThirdPlugin(contactName, contactEMail, serverID, organisation);
+                property = new ThirdPlugin(contactName, contactEMail, serverID, organisation, dataCenter);
                 ((ThirdPlugin) property).setProductName(product);
                 break;
         }

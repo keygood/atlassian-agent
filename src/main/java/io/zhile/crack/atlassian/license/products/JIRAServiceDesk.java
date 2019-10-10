@@ -13,10 +13,6 @@ public class JIRAServiceDesk extends LicenseProperty {
         super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
-    public JIRAServiceDesk(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
-    }
-
     @Override
     public void init() {
         super.init();

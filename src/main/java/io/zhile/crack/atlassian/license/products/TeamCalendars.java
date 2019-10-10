@@ -10,10 +10,6 @@ public class TeamCalendars extends Plugin {
         super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
-    public TeamCalendars(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
-    }
-
     @Override
     public String getProductName() {
         return "team_calendars";

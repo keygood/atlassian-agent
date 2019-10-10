@@ -9,8 +9,8 @@ import io.zhile.crack.atlassian.license.LicenseProperty;
  * @link https://zhile.io
  */
 public class Bamboo extends LicenseProperty {
-    public Bamboo(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
+    public Bamboo(String contactName, String contactEMail, String serverID, String organisation, boolean dataCenter) {
+        super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Bamboo extends LicenseProperty {
 
     @Override
     public void setNumberOfUsers(int numberOfUsers) {
-        //
+        // disabled
     }
 
     public void setLicenseEdition(LicenseEdition licenseEdition) {

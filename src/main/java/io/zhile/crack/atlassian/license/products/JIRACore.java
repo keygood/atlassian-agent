@@ -10,8 +10,8 @@ import io.zhile.crack.atlassian.license.LicenseType;
  * @link https://zhile.io
  */
 public class JIRACore extends LicenseProperty {
-    public JIRACore(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
+    public JIRACore(String contactName, String contactEMail, String serverID, String organisation, boolean dataCenter) {
+        super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
     @Override

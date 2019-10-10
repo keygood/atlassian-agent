@@ -12,10 +12,6 @@ public class Bitbucket extends LicenseProperty {
         super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
-    public Bitbucket(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
-    }
-
     @Override
     public String getProductName() {
         return "stash";

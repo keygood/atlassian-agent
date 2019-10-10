@@ -30,10 +30,6 @@ abstract public class LicenseProperty {
         this.dataCenter = dataCenter;
     }
 
-    public LicenseProperty(String contactName, String contactEMail, String serverID, String organisation) {
-        this(contactName, contactEMail, serverID, organisation, false);
-    }
-
     public void init() {
         Date expiryDate = new Date(3771590399000L);
         String licenseId = "L" + System.currentTimeMillis();

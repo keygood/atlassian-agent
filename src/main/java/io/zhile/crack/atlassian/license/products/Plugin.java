@@ -12,10 +12,6 @@ abstract public class Plugin extends LicenseProperty {
         super(contactName, contactEMail, serverID, organisation, dataCenter);
     }
 
-    public Plugin(String contactName, String contactEMail, String serverID, String organisation) {
-        super(contactName, contactEMail, serverID, organisation);
-    }
-
     @Override
     public void init() {
         super.init();
